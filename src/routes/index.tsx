@@ -6,7 +6,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { toast } from "sonner";
 import {
-  Github, Linkedin, Twitter, Mail, MapPin, Phone, Download, ArrowDown, ArrowRight,
+  Mail, MapPin, Phone, Download, ArrowDown, ArrowRight,
   Menu, X, Sun, Moon, Code2, Palette, Zap, Smartphone, TestTube2, Rocket,
   Accessibility, Star, ChevronLeft, ChevronRight, ChevronDown, ExternalLink,
   Calendar, Briefcase, GraduationCap, Award, ArrowUp, Clock, Tag, Sparkles,
