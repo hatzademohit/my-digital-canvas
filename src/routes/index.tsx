@@ -122,7 +122,7 @@ function Navbar({ theme, setTheme, active, scrolled, menuOpen, setMenuOpen, scro
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "glass py-3" : "py-5 bg-transparent"}`}>
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6">
-        <button onClick={() => scrollTo("home")} className="flex items-center gap-2 font-bold text-lg">
+        <button onClick={() => scrollTo("home")} className="flex items-center gap-2 font-bold text-lg cursor-pointer">
           <span className="grid h-9 w-9 place-items-center rounded-lg bg-gradient-primary text-white">M</span>
           <span className="hidden sm:inline">Mohit<span className="text-gradient">.</span></span>
         </button>
@@ -132,7 +132,7 @@ function Navbar({ theme, setTheme, active, scrolled, menuOpen, setMenuOpen, scro
               <button
                 onClick={() => scrollTo(n.id)}
                 aria-current={active === n.id ? "page" : undefined}
-                className={`relative px-3 py-2 text-sm font-medium transition ${active === n.id ? "text-foreground" : "text-muted-foreground hover:text-foreground"}`}
+                className={`relative px-3 py-2 text-sm font-medium transition cursor-pointer ${active === n.id ? "text-foreground" : "text-muted-foreground hover:text-foreground"}`}
               >
                 {n.label}
                 {active === n.id && (
@@ -146,7 +146,7 @@ function Navbar({ theme, setTheme, active, scrolled, menuOpen, setMenuOpen, scro
           <button
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             aria-label="Toggle theme"
-            className="grid h-10 w-10 place-items-center rounded-lg glass hover:bg-white/10 transition"
+            className="grid h-10 w-10 place-items-center rounded-lg glass hover:bg-white/10 transition cursor-pointer"
           >
             <AnimatePresence mode="wait" initial={false}>
               <motion.span key={theme} initial={{ rotate: -90, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} exit={{ rotate: 90, opacity: 0 }} transition={{ duration: 0.2 }}>
@@ -154,10 +154,10 @@ function Navbar({ theme, setTheme, active, scrolled, menuOpen, setMenuOpen, scro
               </motion.span>
             </AnimatePresence>
           </button>
-          <button onClick={() => scrollTo("contact")} className="hidden sm:inline-flex items-center gap-1.5 rounded-lg bg-gradient-primary px-4 py-2 text-sm font-medium text-white shadow-lg hover:opacity-90 transition">
+          <button onClick={() => scrollTo("contact")} className="hidden sm:inline-flex items-center gap-1.5 rounded-lg bg-gradient-primary px-4 py-2 text-sm font-medium text-white shadow-lg hover:opacity-90 transition cursor-pointer">
             Hire Me <ArrowRight className="h-3.5 w-3.5" />
           </button>
-          <button onClick={() => setMenuOpen(!menuOpen)} className="lg:hidden grid h-10 w-10 place-items-center rounded-lg glass" aria-label="Open menu" aria-expanded={menuOpen}>
+          <button onClick={() => setMenuOpen(!menuOpen)} className="lg:hidden grid h-10 w-10 place-items-center rounded-lg glass cursor-pointer" aria-label="Open menu" aria-expanded={menuOpen}>
             {menuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>
         </div>
@@ -169,7 +169,7 @@ function Navbar({ theme, setTheme, active, scrolled, menuOpen, setMenuOpen, scro
             <ul className="flex flex-col gap-1">
               {NAV.map((n) => (
                 <li key={n.id}>
-                  <button onClick={() => scrollTo(n.id)} className={`w-full rounded-lg px-4 py-2.5 text-left text-sm ${active === n.id ? "bg-white/10 text-foreground" : "text-muted-foreground"}`}>
+                  <button onClick={() => scrollTo(n.id)} className={`w-full rounded-lg px-4 py-2.5 text-left text-sm cursor-pointer ${active === n.id ? "bg-white/10 text-foreground" : "text-muted-foreground"}`}>
                     {n.label}
                   </button>
                 </li>
@@ -219,13 +219,13 @@ function Hero({ scrollTo }: { scrollTo: (id: string) => void }) {
           </motion.h1>
           <motion.p variants={fadeUp} className="mt-6 max-w-xl text-lg text-muted-foreground">{portfolio.tagline}</motion.p>
           <motion.div variants={fadeUp} className="mt-8 flex flex-wrap gap-3">
-            <button onClick={() => scrollTo("contact")} className="inline-flex items-center gap-2 rounded-lg bg-gradient-primary px-6 py-3 font-medium text-white shadow-lg hover:opacity-90 transition">
+            <button onClick={() => scrollTo("contact")} className="inline-flex items-center gap-2 rounded-lg bg-gradient-primary px-6 py-3 font-medium text-white shadow-lg hover:opacity-90 transition cursor-pointer">
               Hire Me <ArrowRight className="h-4 w-4" />
             </button>
-            <a href="/resume.pdf" download className="inline-flex items-center gap-2 rounded-lg glass px-6 py-3 font-medium hover:bg-white/10 transition">
+            <a href="/resume.pdf" download className="inline-flex items-center gap-2 rounded-lg glass px-6 py-3 font-medium hover:bg-white/10 transition cursor-pointer">
               <Download className="h-4 w-4" /> Resume
             </a>
-            <button onClick={() => scrollTo("projects")} className="inline-flex items-center gap-2 rounded-lg px-6 py-3 font-medium text-muted-foreground hover:text-foreground transition">
+            <button onClick={() => scrollTo("projects")} className="inline-flex items-center gap-2 rounded-lg px-6 py-3 font-medium text-muted-foreground hover:text-foreground transition cursor-pointer">
               View Projects <ArrowRight className="h-4 w-4" />
             </button>
           </motion.div>
@@ -251,7 +251,7 @@ function Hero({ scrollTo }: { scrollTo: (id: string) => void }) {
           </div>
         </motion.div>
       </div>
-      <button onClick={() => scrollTo("about")} aria-label="Scroll down" className="absolute bottom-8 left-1/2 -translate-x-1/2 text-muted-foreground hover:text-foreground transition">
+      <button onClick={() => scrollTo("about")} aria-label="Scroll down" className="absolute bottom-8 left-1/2 -translate-x-1/2 text-muted-foreground hover:text-foreground transition cursor-pointer">
         <ArrowDown className="h-6 w-6 animate-bounce-soft" />
       </button>
     </section>
@@ -330,7 +330,7 @@ function Skills() {
       <div className="mb-8 flex flex-wrap justify-center gap-2">
         {categories.map((c) => (
           <button key={c} onClick={() => setActive(c)}
-            className={`rounded-full px-4 py-2 text-sm font-medium transition ${active === c ? "bg-gradient-primary text-white shadow-lg" : "glass text-muted-foreground hover:text-foreground"}`}>
+            className={`rounded-full px-4 py-2 text-sm font-medium transition ${active === c ? "bg-gradient-primary text-white shadow-lg" : "glass text-muted-foreground hover:text-foreground cursor-pointer"}`}>
             {c}
           </button>
         ))}
@@ -417,7 +417,7 @@ function Projects() {
       <div className="mb-10 flex flex-wrap justify-center gap-2">
         {filters.map((f) => (
           <button key={f.id} onClick={() => setFilter(f.id)}
-            className={`rounded-full px-5 py-2 text-sm font-medium transition ${filter === f.id ? "bg-gradient-primary text-white shadow-lg" : "glass text-muted-foreground hover:text-foreground"}`}>
+            className={`rounded-full px-5 py-2 text-sm font-medium transition ${filter === f.id ? "bg-gradient-primary text-white shadow-lg" : "glass text-muted-foreground hover:text-foreground cursor-pointer"}`}>
             {f.label}
           </button>
         ))}
@@ -484,7 +484,7 @@ function ProjectModal({ project, onClose }: { project: Project | null; onClose: 
               <div className="absolute inset-0 flex items-center justify-center">
                 <span className="text-6xl font-bold text-white/90">{project.title}</span>
               </div>
-              <button onClick={onClose} aria-label="Close" className="absolute top-4 right-4 grid h-9 w-9 place-items-center rounded-lg bg-black/30 backdrop-blur text-white hover:bg-black/50">
+              <button onClick={onClose} aria-label="Close" className="absolute top-4 right-4 grid h-9 w-9 place-items-center rounded-lg bg-black/30 backdrop-blur text-white hover:bg-black/50 cursor-pointer">
                 <X className="h-4 w-4" />
               </button>
             </div>
@@ -549,7 +549,7 @@ function Qualifications() {
       <div className="mb-10 flex flex-wrap justify-center gap-2">
         {tabs.map((t) => (
           <button key={t.id} onClick={() => setTab(t.id)}
-            className={`inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium transition ${tab === t.id ? "bg-gradient-primary text-white shadow-lg" : "glass text-muted-foreground hover:text-foreground"}`}>
+            className={`inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium transition cursor-pointer ${tab === t.id ? "bg-gradient-primary text-white shadow-lg" : "glass text-muted-foreground hover:text-foreground"}`}>
             <t.icon className="h-4 w-4" /> {t.label}
           </button>
         ))}
@@ -618,7 +618,7 @@ function Testimonials() {
         </div>
         <div className="mt-6 flex items-center justify-center gap-4">
           <button onClick={() => setIdx((i) => (i - 1 + testimonials.length) % testimonials.length)} aria-label="Previous"
-            className="grid h-10 w-10 place-items-center rounded-full glass hover:bg-white/10 transition">
+            className="grid h-10 w-10 place-items-center rounded-full glass hover:bg-white/10 transition cursor-pointer">
             <ChevronLeft className="h-4 w-4" />
           </button>
           <div className="flex gap-2">
@@ -628,7 +628,7 @@ function Testimonials() {
             ))}
           </div>
           <button onClick={() => setIdx((i) => (i + 1) % testimonials.length)} aria-label="Next"
-            className="grid h-10 w-10 place-items-center rounded-full glass hover:bg-white/10 transition">
+            className="grid h-10 w-10 place-items-center rounded-full glass hover:bg-white/10 transition cursor-pointer">
             <ChevronRight className="h-4 w-4" />
           </button>
         </div>
@@ -681,7 +681,7 @@ function FAQ() {
           return (
             <div key={f.q} className="rounded-xl glass overflow-hidden">
               <button onClick={() => setOpen(isOpen ? null : i)} aria-expanded={isOpen}
-                className="flex w-full items-center justify-between p-5 text-left font-medium">
+                className="flex w-full items-center justify-between p-5 text-left font-medium cursor-pointer">
                 {f.q}
                 <ChevronDown className={`h-4 w-4 flex-shrink-0 transition-transform ${isOpen ? "rotate-180" : ""}`} />
               </button>
@@ -765,7 +765,7 @@ function Contact() {
             <textarea rows={5} {...register("message")} className="w-full rounded-lg bg-white/5 border border-white/10 px-4 py-2.5 text-sm outline-none focus:border-primary transition resize-none" placeholder="Tell me about your project…" />
           </Field>
           <button type="submit" disabled={isSubmitting}
-            className="inline-flex items-center gap-2 rounded-lg bg-gradient-primary px-6 py-3 font-medium text-white shadow-lg hover:opacity-90 transition disabled:opacity-50">
+            className="inline-flex items-center gap-2 rounded-lg bg-gradient-primary px-6 py-3 font-medium text-white shadow-lg hover:opacity-90 transition disabled:opacity-50 cursor-pointer">
             {isSubmitting ? (
               <><span className="h-4 w-4 animate-spin rounded-full border-2 border-white/30 border-t-white" /> Sending…</>
             ) : (
@@ -805,7 +805,7 @@ function Footer({ scrollTo }: { scrollTo: (id: string) => void }) {
           <ul className="space-y-2 text-sm">
             {NAV.slice(0, 6).map((n) => (
               <li key={n.id}>
-                <button onClick={() => scrollTo(n.id)} className="text-muted-foreground hover:text-foreground transition">{n.label}</button>
+                <button onClick={() => scrollTo(n.id)} className="text-muted-foreground hover:text-foreground transition cursor-pointer">{n.label}</button>
               </li>
             ))}
           </ul>

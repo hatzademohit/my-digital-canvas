@@ -24,7 +24,7 @@ export const portfolio = {
   },
   stats: [
     { label: "Years Experience", value: 4, suffix: "+" },
-    { label: "Projects Delivered", value: 7, suffix: "+" },
+    { label: "Projects Delivered", value: 13, suffix: "+" },
     { label: "Awards Received", value: 3, suffix: "" },
     { label: "Technologies", value: 20, suffix: "+" },
   ],
@@ -128,7 +128,10 @@ export const skills = {
 
 export const services = [
   { icon: "Code2", title: "Frontend Development", desc: "React, Next.js & TypeScript apps built for scale and speed." },
+  { icon: "Code2", title: "Web Development", desc: "React, Next.js, PHP, Node.js, Backend & TypeScript apps built for scale and speed." },
+  { icon: "Code2", title: "Mobile Development", desc: "React Native & TypeScript apps built for scale and speed." },
   { icon: "Palette", title: "Figma-to-Code", desc: "Pixel-perfect conversion of designs into reusable components." },
+  { icon: "Palette", title: "Figma-to-Email-Template", desc: "Using HTML and CSS convert figma to email template design." },
   { icon: "Zap", title: "Performance Audits", desc: "Code-splitting, lazy loading & bundle optimisation." },
   { icon: "Smartphone", title: "Responsive UI", desc: "Mobile-first layouts that look great on every device." },
   { icon: "TestTube2", title: "Testing & QA", desc: "Jest + RTL coverage for reliable, regression-safe releases." },
@@ -136,22 +139,63 @@ export const services = [
 ];
 
 export const techStack = [
-  { name: "React", category: "Framework" },
-  { name: "Next.js", category: "Framework" },
+  // Language
+  { name: "HTML", category: "Language" },
+  { name: "CSS", category: "Language" },
   { name: "TypeScript", category: "Language" },
   { name: "JavaScript", category: "Language" },
+  { name: "PHP", category: "Language" },
+  // framework
+  { name: "React", category: "Framework" },
+  { name: "React Native", category: "Framework" },
+  { name: "Next.js", category: "Framework" },
+  { name: "Backend", category: "" },
+  { name: "SCSS", category: "CSS preprocessor" },
+  // Library
+  { name: "jQuery", category: "Library" },
+  // Styling
   { name: "Tailwind CSS", category: "Styling" },
   { name: "Material UI", category: "Styling" },
+  { name: "React Bootstrap", category: "Styling" },
+  { name: "Chakra UI", category: "Styling" },
+  // State Management
   { name: "Zustand", category: "State" },
+  { name: "Redux", category: "State" },
+  { name: "Context API", category: "State" },
+  // Testing library
   { name: "Jest", category: "Testing" },
   { name: "React Testing Library", category: "Testing" },
+  { name: "Unit Testing", category: "Testing" },
+  { name: "Integration Testing", category: "Testing" },
+  // Tools
   { name: "Git", category: "Tooling" },
   { name: "GitHub Actions", category: "Tooling" },
+  { name: "CI/CD Pipeline", category: "Tooling" },
+  { name: "REST APIs", category: "Tooling" },
+  { name: "Lazy Loading", category: "Tooling" },
+  { name: "Code Splitting", category: "Tooling" },
+  // Deployment
   { name: "Vercel", category: "Hosting" },
   { name: "Netlify", category: "Hosting" },
+  { name: "AWS", category: "Hosting" },
+  // Practice
+  { name: "Responsive Design", category: "Practice"},
+  { name: "Cross-browser Compatibility", category: "Practice"},
+  { name: "Accessibility (a11y)", category: "Practice"},
+  { name: "Agile/Scrum", category: "Practice"},
+  { name: "Figma-to-Code", category: "Practice"},
+  { name: "Figma-to-Email-Template", category: "Practice"},
+  { name: "Reusable Components", category: "Practice"},
+  // Analytical
+  { name: "Critical Thinking", category: "Analytical"},
+  { name: "Research, Analysis", category: "Analytical"},
+  { name: "Observation, Attention to Detail", category: "Analytical"},
+  { name: "Troubleshooting", category: "Analytical"},
+  { name: "Planning", category: "Analytical"},
+  { name: "Organization", category: "Analytical"},
+
+
   { name: "Figma", category: "Design" },
-  { name: "PHP", category: "Language" },
-  { name: "jQuery", category: "Library" },
 ];
 
 export type Project = {
