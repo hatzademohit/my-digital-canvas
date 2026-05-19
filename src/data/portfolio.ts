@@ -377,3 +377,15 @@ export const blog = [
     gradient: "from-emerald-500 to-teal-500",
   },
 ];
+
+export const NAV = [
+  { id: "home", label: "Home" },
+  { id: "about", label: "About" },
+  { id: "skills", label: "Skills" },
+  { id: "services", label: "Services" },
+  { id: "projects", label: "Projects" },
+  { id: "qualifications", label: "Resume" },
+  { id: "testimonials", label: "Testimonials" },
+  { id: "blog", label: "Blog" },
+  { id: "contact", label: "Contact" },
+];
