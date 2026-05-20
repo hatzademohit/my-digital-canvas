@@ -19,7 +19,7 @@ function Skills() {
       <div className="mx-auto grid max-w-3xl gap-4">
         {skills[active].map((s, i) => (
           <motion.div key={s.name} initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.05 }}
-            className="rounded-xl glass p-5">
+            className="rounded-xl glass px-5 py-3">
             <div className="flex justify-between mb-2">
               <span className="font-medium">{s.name}</span>
               <span className="text-sm text-muted-foreground">{s.level}%</span>

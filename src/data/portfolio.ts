@@ -17,10 +17,12 @@ export const portfolio = {
   phone: "+91 83900 51169",
   availability: "Available for freelance & full-time roles",
   socials: {
-    github: "https://github.com/mohithatzade",
+    github: "https://github.com/hatzademohit",
     linkedin: "https://www.linkedin.com/in/mohit-hatzade/",
     twitter: "https://twitter.com/",
     email: "mailto:mohithatzade629@gmail.com",
+    instagram: "https://www.instagram.com/mohit_hatzade/",
+    whatsapp: "https://wa.me/8390051169",
   },
   stats: [
     { label: "Years Experience", value: 4, suffix: "+" },
@@ -103,17 +105,20 @@ export const skills = {
     { name: "Next.js", level: 90 },
     { name: "TypeScript", level: 90 },
     { name: "JavaScript (ES6+)", level: 95 },
+    { name: "jQuery", level: 95 },
     { name: "HTML5 & CSS3", level: 95 },
-    { name: "SCSS", level: 85 },
   ],
   "UI & Styling": [
     { name: "Tailwind CSS", level: 92 },
     { name: "Material UI", level: 88 },
+    { name: "Bootstrap", level: 95 },
     { name: "React Bootstrap", level: 80 },
     { name: "Figma-to-Code", level: 90 },
+    { name: "SCSS", level: 85 },
   ],
   State: [
-    { name: "Zustand", level: 88 },
+    { name: "Zustand", level: 85 },
+    { name: "Redux", level: 90 },
     { name: "React Context", level: 92 },
     { name: "React Hooks", level: 95 },
   ],
@@ -123,6 +128,7 @@ export const skills = {
     { name: "Git & GitHub Actions", level: 88 },
     { name: "Vercel / Netlify", length: 90, level: 90 },
     { name: "REST APIs", level: 90 },
+    { name: "AWS", level: 90 },
   ],
 };
 
@@ -282,7 +288,106 @@ export const projects: Project[] = [
     category: "internal",
     featured: false,
     date: "Jan 2022 – Present",
-    gradient: "from-amber-500 via-orange-500 to-red-500",
+    gradient: "from-amber-500 via-orange-500 to-red-500 top-[-10px]",
+  },
+  {
+    id: "oben_whiskey",
+    title: "Oben Whiskey",
+    subtitle: "Whiskey Brand",
+    description: "Oban is a Highland single malt Scotch whisky, crafted at one of Scotland's smallest and oldest distilleries, founded in 1794 in the seaside port town of the same name.",
+    features: [
+      "Create a reusable components",
+      "Create slider view and animation using react and css",
+      "Responsive & Mobile-Friendly UI",
+      "Fully static website",
+    ],
+    tech: ["React.js", "JavaScript", "High-chart", "React-Boostrap", "HTML5", "CSS3"],
+    category: "web",
+    featured: true,
+    date: "Jan 2022 – Present",
+    gradient: "from-[#111111] via-[#1a1a1a] to-black"
+  },
+  {
+    id: "old_parr",
+    title: "Old Parr",
+    subtitle: "Whiskey Brand",
+    description: "Old Parr (officially Grand Old Parr) is a popular blended Scotch whisky introduced in 1909. Owned by Diageo, it is famous for its distinct, crinkled square bottle and smooth, fruit-forward flavor profile.",
+    features: [
+      "Create a reusable components",
+      "Create slider view and animation using react and css",
+      "Responsive & Mobile-Friendly UI",
+      "Fully static website",
+    ],
+    tech: ["React.js", "JavaScript", "High-chart", "React-Boostrap", "HTML5", "CSS3"],
+    category: "web",
+    featured: true,
+    date: "Jan 2022 – Present",
+    gradient: "from-yellow-400 via-amber-500 to-yellow-600"
+  },
+  {
+    id: "seagrams7",
+    title: "Seagram's 7",
+    subtitle: "Whiskey Brand",
+    description: "Seagram's 7 Crown is a widely recognized, budget-friendly American blended whiskey owned by Diageo.",
+    features: [
+      "Create a reusable components",
+      "Create slider view and animation using react and css",
+      "Responsive & Mobile-Friendly UI",
+      "Fully static website",
+    ],
+    tech: ["React.js", "JavaScript", "High-chart", "React-Boostrap", "HTML5", "CSS3"],
+    category: "web",
+    featured: true,
+    date: "Jan 2022 – Present",
+    gradient: "from-red-900 via-red-700 to-red-500 top-[-10px]"
+  },
+  {
+    id: "green_solar",
+    title: "Green Solar",
+    subtitle: "Free Lancing",
+    description: "Developed a responsive solar inquiry management platform for Waree Solar, enabling seamless customer inquiry handling, lead generation, and efficient workflow management with modern frontend technologies.",
+    features: [
+      "Customer Inquiry Submission",
+      "Lead Management System",
+      "Responsive & Mobile-Friendly UI"
+    ],
+    tech: ["React.js", "JavaScript", "HTML5", "Tailwind CSS", "React Hook Form"],
+    category: "internal",
+    featured: true,
+    date: "Jan 2022 – Present",
+    gradient: "from-green-500 via-emerald-500 to-teal-500"
+  },
+  {
+    id: "lead_crm",
+    title: "Lead CRM",
+    subtitle: "Practice Projects",
+    description: "Built responsive practice screens using React and CSS to strengthen frontend development skills, focusing on reusable components, clean UI design, responsive layouts, and modern styling practices.",
+    features: [
+      "Cross-browser Compatibility",
+      "Lead Management System",
+      "Responsive & Mobile-Friendly UI"
+    ],
+    tech: ["React.js", "JavaScript", "HTML5", "Tailwind CSS"],
+    category: "internal",
+    featured: false,
+    date: "Jan 2026 – Jan 2026",
+    gradient: "bg-[linear-gradient(90.37deg,#5ED3FF_-12.35%,#6EC6FE_0.67%,#EB65F4_100.24%,#FD58F2_114.28%)]"
+  },
+  {
+    id: "e_commerce",
+    title: "E Commerce website",
+    subtitle: "Practice Projects",
+   description: "Built a responsive e-commerce frontend with product listing, product details, add-to-cart functionality, cart management, API integration, and optimized user experience across devices.",
+    features: [
+      "Cross-browser Compatibility",
+      "Lead Management System",
+      "Responsive & Mobile-Friendly UI"
+    ],
+    tech: ["React.js", "JavaScript", "HTML5", "Tailwind CSS"],
+    category: "internal",
+    featured: false,
+    date: "FEB 2026 – FEB 2026",
+    gradient: "bg-[linear-gradient(90.37deg,#F1F8FE_-12.35%,#DCEEFF_0.67%,#C7E4FF_100.24%,#A5D8FF_114.28%)]"
   },
 ];
 
@@ -332,7 +437,7 @@ export const faqs = [
   },
   {
     q: "Which stacks do you specialise in?",
-    a: "React, Next.js, TypeScript and Tailwind are my daily drivers. I'm equally comfortable with Material UI, Zustand and REST integrations.",
+    a: "React, Next.js, TypeScript and Tailwind are my daily drivers. I'm equally comfortable with Material UI, Redux, Zustand and REST integrations.",
   },
   {
     q: "Can you optimise an existing slow app?",

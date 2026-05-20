@@ -35,7 +35,7 @@ function About() {
               );
             })}
           </div>
-          <a href="/resume.pdf" download className="mt-8 inline-flex items-center gap-2 rounded-lg bg-gradient-primary px-5 py-2.5 text-sm font-medium text-white shadow-lg hover:opacity-90 transition">
+          <a href="/Mohit_Hatzade_Resume_Frontend_Developer.pdf" download className="mt-8 inline-flex items-center gap-2 rounded-lg bg-gradient-primary px-5 py-2.5 text-sm font-medium text-white shadow-lg hover:opacity-90 transition">
             <Download className="h-4 w-4" /> Download CV
           </a>
         </motion.div>

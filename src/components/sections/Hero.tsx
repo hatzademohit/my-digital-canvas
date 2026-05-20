@@ -28,7 +28,7 @@ function Hero({ scrollTo }: { scrollTo: (id: string) => void }) {
             <button onClick={() => scrollTo("contact")} className="inline-flex items-center gap-2 rounded-lg bg-gradient-primary px-6 py-3 font-medium text-white shadow-lg hover:opacity-90 transition cursor-pointer">
               Hire Me <ArrowRight className="h-4 w-4" />
             </button>
-            <a href="/resume.pdf" download className="inline-flex items-center gap-2 rounded-lg glass px-6 py-3 font-medium hover:bg-white/10 transition cursor-pointer">
+            <a href="/Mohit_Hatzade_Resume_Frontend_Developer.pdf" download className="inline-flex items-center gap-2 rounded-lg glass px-6 py-3 font-medium hover:bg-white/10 transition cursor-pointer">
               <Download className="h-4 w-4" /> Resume
             </a>
             <button onClick={() => scrollTo("projects")} className="inline-flex items-center gap-2 rounded-lg px-6 py-3 font-medium text-muted-foreground hover:text-foreground transition cursor-pointer">

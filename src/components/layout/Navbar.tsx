@@ -4,7 +4,7 @@ import { ArrowRight, Menu, Moon, Sun, X } from "lucide-react";
 
 function Navbar({ theme, setTheme, active, scrolled, menuOpen, setMenuOpen, scrollTo }: any) {
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "glass py-3" : "py-5 bg-transparent"}`}>
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 glass border-b ${scrolled ? "py-3" : "py-5"}`}>
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6">
         <button onClick={() => scrollTo("home")} className="flex items-center gap-2 font-bold text-lg cursor-pointer">
           <span className="grid h-9 w-9 place-items-center rounded-lg bg-gradient-primary text-white">M</span>

@@ -3,6 +3,7 @@ import { useState } from "react";
 import Section from "../common/Section";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import ProjectModal from "../ui/ProjectModal";
 
 function Projects() {
   const [filter, setFilter] = useState<"all" | Project["category"]>("all");
@@ -54,14 +55,14 @@ function Projects() {
                 ))}
                 {p.tech.length > 4 && <span className="rounded-md bg-white/5 px-2 py-1 text-xs">+{p.tech.length - 4}</span>}
               </div>
-              <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary group-hover:gap-2 transition-all">
+              <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary group-hover:gap-2 transition-all cursor-pointer">
                 View details <ArrowRight className="h-3.5 w-3.5" />
               </span>
             </div>
           </motion.button>
         ))}
       </div>
-      {/* <ProjectModal project={selected} onClose={() => setSelected(null)} /> */}
+      <ProjectModal project={selected} onClose={() => setSelected(null)} />
     </Section>
   );
 }

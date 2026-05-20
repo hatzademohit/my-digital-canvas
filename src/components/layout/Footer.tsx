@@ -1,4 +1,6 @@
 import { NAV_ITEMS } from "@/constants/navigation";
+import SocialIcons from "../common/SocialLinks";
+import { portfolio } from "@/data/portfolio";
 
 function Footer({ scrollTo }: { scrollTo: (id: string) => void }) {
   return (
@@ -23,8 +25,8 @@ function Footer({ scrollTo }: { scrollTo: (id: string) => void }) {
         </div>
         <div>
           <h4 className="font-semibold mb-3">Connect</h4>
-          {/* <SocialIcons />
-          <p className="mt-4 text-sm text-muted-foreground">{portfolio.email}</p> */}
+          <SocialIcons />
+          <p className="mt-4 text-sm text-muted-foreground">{portfolio.email}</p>
         </div>
       </div>
       <div className="mx-auto mt-10 max-w-7xl border-t border-white/5 pt-6 text-center text-xs text-muted-foreground">

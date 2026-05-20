@@ -32,18 +32,18 @@ function Qualifications() {
               <div className="absolute left-0 top-1 grid h-8 w-8 place-items-center rounded-full bg-gradient-primary text-white shadow-lg">
                 <Calendar className="h-3.5 w-3.5" />
               </div>
-              <div className="rounded-xl glass p-5">
+              <div className="rounded-xl glass px-5 py-3">
                 <div className="flex flex-wrap justify-between gap-2">
                   <h3 className="font-semibold">{it.title}</h3>
                   {it.date && <span className="text-xs text-muted-foreground">{it.date}</span>}
                 </div>
                 <p className="text-sm text-primary">{it.sub}</p>
                 {it.desc && <p className="mt-2 text-sm text-muted-foreground">{it.desc}</p>}
-                {it.url && (
+                {/* {it.url && (
                   <a href={it.url} target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex items-center gap-1 text-xs text-primary hover:underline">
                     View credential <ExternalLink className="h-3 w-3" />
                   </a>
-                )}
+                )} */}
               </div>
             </motion.div>
           ))}

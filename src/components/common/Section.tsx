@@ -18,7 +18,7 @@ export default function Section({
   return (
     <section
       id={id}
-      className={`relative scroll-mt-24 py-24 px-6 ${className}`}
+      className={`relative scroll-mt-24 py-12 px-6 ${className}`}
     >
       <div className="mx-auto max-w-7xl">
         {(title || eyebrow) && (
